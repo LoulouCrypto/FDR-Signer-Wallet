@@ -10,11 +10,11 @@
 	var coinjs = window.coinjs = function () { };
 
 	/* public vars */
-	coinjs.pub = 0x5f; // f 
-	coinjs.priv = 0x61; // g 
-	coinjs.multisig = 0x5c; // e
-	coinjs.hdkey = {'prv':0x0221311b, 'pub':0x022d2523}; // EXT_SECRET_KEY and EXT_PUBLIC_KEY values
-	coinjs.bech32 = {'charset':'qpzry9x8gf2tvdw0s3jn54khce6mua7l', 'version':0, 'hrp':'bc'}; // No changes, as the values weren't provided earlier.
+	coinjs.pub = 0x00;
+	coinjs.priv = 0x80;
+	coinjs.multisig = 0x05;
+	coinjs.hdkey = {'prv':0x0488ade4, 'pub':0x0488b21e};
+	coinjs.bech32 = {'charset':'qpzry9x8gf2tvdw0s3jn54khce6mua7l', 'version':0, 'hrp':'bc'};
 
 	coinjs.compressed = false;
 
