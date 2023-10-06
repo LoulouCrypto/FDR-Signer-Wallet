@@ -10,16 +10,16 @@
 	var coinjs = window.coinjs = function () { };
 
 	/* public vars */
-	coinjs.pub = 0x00;
-	coinjs.priv = 0x80;
-	coinjs.multisig = 0x05;
-	coinjs.hdkey = {'prv':0x0488ade4, 'pub':0x0488b21e};
-	coinjs.bech32 = {'charset':'qpzry9x8gf2tvdw0s3jn54khce6mua7l', 'version':0, 'hrp':'bc'};
+	coinjs.pub = 0x5f; // f 
+	coinjs.priv = 0x61; // g 
+	coinjs.multisig = 0x5c; // e
+	coinjs.hdkey = {'prv':0x0221311b, 'pub':0x022d2523}; // EXT_SECRET_KEY and EXT_PUBLIC_KEY values
+	coinjs.bech32 = {'charset':'qpzry9x8gf2tvdw0s3jn54khce6mua7l', 'version':0, 'hrp':'bc'}; // No changes, as the values weren't provided earlier.
 
 	coinjs.compressed = false;
 
 	/* other vars */
-	coinjs.developer = '1GkMoCVKvT7ZcDUGXemhT3CusgE68wiJ66'; //bitcoin
+	coinjs.developer = 'bc1qw4rkyrl2mpqwkq56t8mhkyrfs4u7qc3d9lrtnt'; //bitcoin
 
 	/* bit(coinb.in) api vars */
 	coinjs.hostname	= ((document.location.hostname.split(".")[(document.location.hostname.split(".")).length-1]) == 'onion') ? 'coinbin3ravkwb24f7rmxx6w3snkjw45jhs5lxbh3yfeg3vpt6janwqd.onion' : 'coinb.in';
@@ -41,6 +41,7 @@
 			'compressed': this.compressed
 		};
 	}
+
 
 	/* generate a new random private key */
 	coinjs.newPrivkey = function(){
